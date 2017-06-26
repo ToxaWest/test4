@@ -15,6 +15,17 @@ html,body{
   padding: 0;
   font-family: 'Corbel';
 }
+h1,h2{
+  color: #2b7d9b;
+  font-family: 'SouvenirBold';
+}
+h1{
+  font-size: 36px;
+}
+h2{
+  font-size: 30px;
+  line-height: 0;
+}
 .header-top{
   background: #4f93ac;
   height:46px;
@@ -102,7 +113,8 @@ html,body{
   border: none;
   background: #9f3b5e;
 }
-.search input[type="submit"]:hover {
+.search input[type="submit"]:hover,
+.subscr form>input[type="submit"]:hover {
   background: #c35179;
   cursor: pointer;
 }
@@ -197,10 +209,11 @@ content{
   border-top:1px solid #eae2e5;
   width: 100%;
   display: inline-block;
+  background: linear-gradient(to bottom, #4f93ac 75% , #ffffff 95%);
 }
 .left-block{
-  max-width: 380px;
-  width: 100%;
+  width: 20%;
+  float: left;
 }
 .nav-head{
   width: 100%;
@@ -208,6 +221,7 @@ content{
   padding: 0 30px;
   line-height: 50px;
   font-size: 18px;
+  background-color: #fff;
 }
 .nav-catalog{
   background: #4f93ac;
@@ -243,11 +257,10 @@ content{
 }
 .nav-catalog > ul > li > a:hover,
 .nav-catalog> ul > li > a.active {
-    color:#3a3a3a;
-    background: #f6f6f6;
-    border-bottom:none;
-    border-right: 1px solid  #4f93ac;
-
+  color:#3a3a3a;
+  background: #f6f6f6;
+  border-bottom:none;
+  border-right: 1px solid  #4f93ac;
 }
 .nav-catalog .sub > ul {
   display: none;
@@ -269,4 +282,158 @@ content{
 }
 .sub .fa-arrow-down{
   color: #3b3b3b;
+}
+.content{
+  float: left;
+  width: 80%;
+  display: block;
+  background-color: #fff;
+}
+.cont-nav{
+  background-color: #efefef;
+  line-height: 50px;
+  height:50px;
+  padding: 0 30px;
+  color: #6a6a6a;
+  font-size: 14px;
+}
+.cont-nav a{
+  text-decoration: none;
+  color: #6a6a6a;
+  margin: 0 3px;
+}
+.cont-nav a:hover{
+  color: #3b3b3b;
+}
+.text{
+  padding: 40px 200px;
+  color: #222;
+  font-family: 'DinPro';
+  position: relative;
+}
+.text h1{
+  display: initial;
+  background: #fff;
+  padding: 0 30px;
+  z-index: 2;
+  position: relative;
+}
+.text hr{
+  border: 1px solid #2b7d9b;
+  width: 80%;
+  left: 10%;
+  right: 10%;
+  top:12px;
+  z-index: 1;
+  position: absolute;
+}
+.zagol{
+  display: block;
+  width: 100%;
+  position: relative;
+  text-align: center;
+}
+p{
+  margin: 30px auto;
+  display: inline-block;
+}
+.cont-footer{
+  width: 80%;
+  margin: 0 10%;
+  float: left;
+  display: inline-block;
+}
+.subscr{
+  width: 50%;
+  float: left;
+}
+.subscr span{
+  color:#134354;
+  font-style: italic;
+  font-size: 20px;
+}
+.subscr form{
+  width: 100%;
+  margin: 30px 0;
+}
+.subscr form>input[type="submit"]{
+  float: right;
+  line-height: 45px;
+  margin: 1px;
+  padding: 0 44px;
+  color:#fff;
+  font-size: 12px;
+  border-radius: 0 10px 10px 0;
+  border: none;
+  background: #9f3b5e;
+}
+.subscr form>input[type="email"]{
+  border: none;
+  outline: none;
+  -webkit-appearance: none;
+  border-radius: 10px 0 0 10px;
+  padding-left: 10px;
+  width: calc(100% - 172px);
+  height: 45px;
+  font-size: 16px;
+  vertical-align: middle;
+  background: #eaeaea;
+}
+.vk{
+  width: 50%;
+  float: left;
+  text-align: center;
+}
+footer{
+  background: #4f93ac;
+  width: 100%;
+  display:inline-block;
+  font-size: 16px;
+}
+.footer{
+  padding: 30px;
+}
+.footer-menu{
+  color: #fff;
+  width: 33%;
+  float: left;
+}
+.footer-menu h3{
+  font-size: 29px;
+  font-family: 'DinPro';
+  line-height: 30px;
+  color: #fff;
+  text-transform: uppercase;
+}
+footer li{
+  list-style: none;
+  margin-bottom: 15px;
+}
+footer a{
+  color: #fff;
+}
+footer a:hover{
+  color:#c35179;
+}
+.footer-contact{
+  float: left;
+  width: 33%;
+  display: block;
+  text-align: right;
+}
+.footer-contact a{
+  text-decoration: none;
+}
+.footer-logo{
+  text-align: center;
+  padding: 40px 0;
+  float: left;
+  width: 33%;
+}
+.footer-soc{
+  width: 100%;
+  padding: 20px 0;
+}
+.footer-soc a{
+  padding: 20px;
 }
