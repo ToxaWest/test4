@@ -157,6 +157,9 @@ h2{
   color: #9f3b5e;
   text-decoration: none;
 }
+.cart .desc{
+  display: inline-block;
+}
 .cart a:hover, .cart i:hover{
   color: #c35179;
 }
@@ -194,6 +197,7 @@ nav{
 }
 nav a{
   text-decoration: none;
+      display: inline-block;
   padding:0 40px;
   border-left: 1px solid #eae2e5;
   border-right: 1px solid #eae2e5;
@@ -203,6 +207,7 @@ nav a{
 }
 nav a:hover,.header-soc a:hover{
   color: #c35179;
+      background: #eae2e5;
 }
 .header-soc{
   display: inline-block;
@@ -210,10 +215,14 @@ nav a:hover,.header-soc a:hover{
   margin:30px 20px;
 }
 .header-soc a{
-  margin: 0 10px;
+  padding: 0 5px;
+  margin-right: 5px;
   text-decoration: none;
+  text-align: center;
   color: #541129;
   font-size: 16px;
+  line-height: 25px;
+  display: inline-block;
 }
 content{
   border-top:1px solid #eae2e5;
@@ -452,6 +461,10 @@ footer a:hover{
   display: inline-block;
   padding: 15px;
 }
+.footer-soc a:hover{
+  background: #84b4c5;
+  color: #fff;
+}
 @media screen and  (max-width:1600px) and (min-width:841px) {
   .contact{
     float: left;
@@ -543,5 +556,26 @@ footer a:hover{
   }
   .footer{
     padding: 15px;
+  }
+}
+@media screen  and (max-width:540px) {
+  .subscr form>input[type="email"],.subscr form>input[type="submit"]  {
+    border-radius: 10px;
+    width: 100%;
+    margin-right: -5px;
+  }
+  .logo img{
+    max-width: 100%;
+  }
+  .logo{
+    width: calc(100% - 60px);
+  }
+  .cart{
+    position: absolute;
+    left: 10px;
+    top: -20px;
+  }
+  .cart .desc{
+    display: none;
   }
 }
