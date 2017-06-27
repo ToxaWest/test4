@@ -528,6 +528,14 @@ footer a:hover{
     cursor: pointer;
     line-height: 40px;
   }
+  body{
+    margin-top: 46px;
+  }
+  .header-top{
+    position: fixed;
+    margin-top: -46px;
+    z-index: 20;
+  }
   .active, .mobile-btn:hover{
     color: #3b3b3b;
     border-radius: 10px;
@@ -570,10 +578,12 @@ footer a:hover{
   .logo{
     width: calc(100% - 60px);
   }
+
   .cart{
-    position: absolute;
+    position: fixed;
     left: 10px;
     top: -20px;
+    z-index: 25;
   }
   .cart .desc{
     display: none;
