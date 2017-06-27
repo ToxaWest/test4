@@ -197,7 +197,7 @@ nav{
 }
 nav a{
   text-decoration: none;
-      display: inline-block;
+  display: inline-block;
   padding:0 40px;
   border-left: 1px solid #eae2e5;
   border-right: 1px solid #eae2e5;
@@ -207,7 +207,7 @@ nav a{
 }
 nav a:hover,.header-soc a:hover{
   color: #c35179;
-      background: #eae2e5;
+  background: #eae2e5;
 }
 .header-soc{
   display: inline-block;
@@ -264,7 +264,8 @@ content{
   text-decoration: none;
   color:#fff;
   padding: 18px 30px;
-  padding-right: 140px;
+  padding-right: 90px;
+  border-right: 1px solid #4f93ac;
   border-bottom: 1px solid #488196;
 }
 .nav-catalog i {
@@ -500,7 +501,6 @@ footer a:hover{
     width: 100%;
   }
 }
-
 @media screen  and (max-width:840px) {
   .text{
     padding: 40px 30px;

@@ -322,43 +322,7 @@
     </div>
   </div>
   </footer>
-  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-<script type="text/javascript">
-  $(document).ready(function () {
-      $('.sub > a').click(function(){
-        $('.sub ul').slideUp();
-         if ($(this).next().next().is(":visible")){
-             $(this).next().next().slideUp();
-             $(this).next().removeClass("fa-arrow-down");
-             $(this).next().addClass("fa-plus");
-
-         } else {
-         $(this).next().next().slideToggle();
-         $(this).next().removeClass("fa-plus");
-         $(this).next().addClass("fa-arrow-down");
-         }
-        return false;
-      });
-         $('.nav-catalog > ul > li > a').click(function(){
-  	   $('.nav-catalog > ul > li > a, .sub a').removeClass('active');
-  	   $(this).addClass('active');
-  	}),
-
-         $('.sub ul li a').click(function(){
-  	   $('.sub ul li a').removeClass('active');
-  	   $(this).addClass('active');
-  	});
-  });
-  $(document).ready(function($){
-    $(".mobile-btn").on("click", function(){
-      $(".mobile").slideToggle();
-      $(this).toggleClass("active");
-    });
-    $(window).resize(function() {
-    if($(window).width() > 830) {
-        $('.mobile').slideUp();
-    }});
-  });
-</script>
+  <script type="text/javascript" src="js/jquery.min.js"></script>
+  <script type="text/javascript" src="js/scripts.js"></script>
 </body>
 </html>
