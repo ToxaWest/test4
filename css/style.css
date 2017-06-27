@@ -8,7 +8,7 @@
 }
 @font-face {
   font-family: 'SouvenirBold';
-  src: url('../fonts/SouvenirBold.ttf');
+  src: url('../fonts/SouvenirBold.woff');
 }
 html,body{
   margin:0;
