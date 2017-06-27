@@ -14,6 +14,7 @@ html,body{
   margin:0;
   padding: 0;
   font-family: 'Corbel';
+  min-width: 250px;
 }
 h1,h2{
   color: #2b7d9b;
@@ -24,7 +25,6 @@ h1{
 }
 h2{
   font-size: 30px;
-  line-height: 0;
 }
 .header-top{
   background: #4f93ac;
@@ -70,17 +70,27 @@ h2{
 .login a:hover{
   background: #84b4c5;
 }
+.mobile{
+  display: none;
+  list-style: none;
+}
+.mobile-btn{
+  display: none;
+}
 .header-content{
   height: 100px;
   width: 100%;
   line-height: 100px;
 }
 .logo{
-  float:left;
+  padding: 0 30px;
+  float: left;
+  display: inline-block;
 }
 .logo img{
   vertical-align: middle;
-  margin: 0 30px;
+  width: 100%;
+  max-width: 330px;
 }
 .search-box{
   float: left;
@@ -430,10 +440,108 @@ footer a:hover{
   float: left;
   width: 33%;
 }
+.footer-logo img{
+  width: 100%;
+  max-width: 330px;
+}
 .footer-soc{
   width: 100%;
   padding: 20px 0;
 }
 .footer-soc a{
-  padding: 20px;
+  display: inline-block;
+  padding: 15px;
+}
+@media screen and  (max-width:1600px) and (min-width:841px) {
+  .contact{
+    float: left;
+    width: 80%;
+  }
+  .text{
+    padding: 40px 100px;
+  }
+  .content{
+    width: 75%;
+  }
+  .left-block{
+    width: 25%;
+  }
+  .mobile-btn, .mobile{
+    display: none;
+  }
+}
+@media screen and (max-width:1430px){
+  .header-soc{
+    display: none;
+  }
+  .text{
+    padding: 40px 50px;
+  }
+  .content{
+    width: 65%;
+  }
+  .left-block{
+    width: 35%;
+  }
+  .subscr,.vk{
+    width: 100%;
+  }
+}
+
+@media screen  and (max-width:840px) {
+  .text{
+    padding: 40px 30px;
+  }
+  .search-box, .contact,.left-block{
+    display: none;
+  }
+  .content{
+    width: 100%;
+  }
+  .text{
+    padding: 20px 15px;
+  }
+  nav,.lang,.login{
+    display: none;
+  }
+  .mobile-btn{
+    width: 40px;
+    display: inline-block;
+    float: right;
+    text-align: center;
+    font-size: 30px;
+    color: #fff;
+    margin: 3px;
+    cursor: pointer;
+    line-height: 40px;
+  }
+  .active, .mobile-btn:hover{
+    color: #3b3b3b;
+    border-radius: 10px;
+    background: #84b4c5;
+  }
+  .mobile{
+    background: #84b4c5;
+    padding: 15px 0;
+    width: 100%;
+    float: right;
+    color: #fff;
+  }
+  .mobile li{
+    margin: 10px 30px;
+  }
+  .mobile a{
+    text-decoration: none;
+    color: #fff;
+  }
+  .mobile a:hover{
+    color: #3b3b3b;
+  }
+  .footer-menu, .footer-logo, .footer-contact{
+    width: 100%;
+    text-align: center;
+  }
+  .footer{
+    padding: 15px;
+  }
 }

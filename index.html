@@ -21,6 +21,20 @@
         <a href="/" title="Зарегистрироваться">Регистрация</a>
         <a href="/" title = "Вход">Войти</a>
       </div>
+      <div class="mobile-btn">
+        <i class="fa fa-bars" aria-hidden="true"></i>
+      </div>
+      <div class="mobile">
+        <li><a href="/" title="Главная">Главная</a></li>
+        <li><a href="/" title="Каталог">Каталог</a></li>
+        <li><a href="/" title="Акция">Акция</a></li>
+        <li><a href="/" title="Содержимое набора">Содержимое набора</a></li>
+        <li><a href="/" title="Новости">Новости</a></li>
+        <li><a href="/" title="Блог">Блог</a></li>
+        <li><a href="/" title="Информация">Информация</a></li>
+        <hr>
+        <li><a href="/" title="Зарегистрироваться">Регистрация</a> | <a href="/" title = "Вход">Войти</a></li>
+      </div>
     </div>
     <div class="header-content">
       <div class="logo">
@@ -335,5 +349,16 @@
   	   $(this).addClass('active');
   	});
   });
+  $(document).ready(function($){
+    $(".mobile-btn").on("click", function(){
+      $(".mobile").slideToggle();
+      $(this).toggleClass("active");
+    });
+    $(window).resize(function() {
+    if($(window).width() > 830) {
+        $('.mobile').slideUp();
+    }});
+  });
 </script>
 </body>
+</html>
